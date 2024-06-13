@@ -1,0 +1,31 @@
+<br>
+<br>
+<div class="container">
+    <table cellpadding=5 class="tabletable-bodered w-75 p-3 bg-dark text-warning p-3" style="margin:auto">
+        <tr>
+            <th>Company Id</th>
+            <th>Company Name</th>
+            <th>Company Sector</th>
+            <th>Current share price</th>
+            <th>MarketCap</th>
+            <th>Dividend Yield</th>
+            <th>P.E. ratio</th>
+            <th></th>
+            <th></th>
+
+
+        </tr>
+        
+        <tr *ngFor="let i of info; index as ind">
+            <td>{{i.cId}}</td>
+            <td>{{i.cName}}</td>
+            <td>{{i.cSector}}</td>
+            <td>{{i.cSharePrice}}</td>
+            <td>{{i.marketCap}}</td>
+            <td>{{i.dividendyield}}</td>
+            <td>{{i.pEratio}}</td> 
+            <td><button class="btn btn-warning" (click)="editCompany(ind)">Edit</button></td>
+            <td><button class="btn btn-warning" (click)="deleteCompany(ind)">Delete</button></td>
+        </tr>
+    </table>
+    </div>

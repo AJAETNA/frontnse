@@ -1,0 +1,52 @@
+<br>
+<br>
+<div class="container w-50" style="margin:auto;">
+    <form>
+        <div class="'mb-3">
+            <label for="id" class="form-label">Company Id</label>
+            <input type = number [(ngModel)]="newCompany.cId"
+            class="form-control" name="id" id="id">
+        </div>
+
+        <div class="'mb-3">
+            <label for="id" class="form-label">Company Name</label>
+            <input type="text" [(ngModel)]="newCompany.cName"
+            class="form-control" name="cname" id="cname">
+        </div>
+
+        <div class="'mb-3">
+            <label for="id" class="form-label">Company Sector</label>
+            <input type="text" [(ngModel)]="newCompany.cSector"
+            class="form-control" name="title" id="title">
+        </div>
+
+        <div class="'mb-3">
+            <label for="id" class="form-label"> Current share price</label>
+            <input type="text" [(ngModel)]="newCompany.cSharePrice"
+            class="form-control" name="currentshareprice" id="currentshareprice">
+        </div>
+
+        <div class="'mb-3">
+            <label for="id" class="form-label"> MarketCap</label>
+            <input type="text" [(ngModel)]="newCompany.marketCap"
+            class="form-control" name="marketcap" id="marketcap">
+        </div>
+
+        <div class="'mb-3">
+            <label for="id" class="form-label"> Dividend Yield</label>
+            <input type = number [(ngModel)]="newCompany.dividendyield"
+            class="form-control" name="dividendyield" id="dividendyield">
+        </div>
+
+        <div class="'mb-3">
+            <label for="id" class="form-label"> P.E. ratio</label>
+            <input type="text" [(ngModel)]="newCompany.pEratio"
+            class="form-control" name="peratio" id="peratio">
+        </div>
+
+        <br> 
+        <div class="container text-center">
+            <button class="btn btn-success" (click)="createCompany()">Create New Company</button>
+        </div>
+    </form>
+</div>
